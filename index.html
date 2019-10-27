@@ -1,20 +1,43 @@
 <html>
 	<head>
 
-		<link rel="stylesheet" type="text/css" href="css/index.css">
+		<link rel="stylesheet" type="text/css" href="code/css/index.css">
 		<meta name="viewport" content="width=device-width, initial-scale1.0">
 		<link href="https://fonts.googleapis.com/css?family=Oswald" rel="stylesheet"> 
 		<title>NoWel </title>
 
 	</head>
 	
+
 	<body>
-    <!-- Add a placeholder for the Twitch embed -->
+
+
+	<div id="Header">
+		<div id="headerlogoL">
+		
+		
+		</div>
+		<div id="headerlogoM">
+			<h2> NoWel.live </h2>
+		</div>
+		<div id="headerlogoR">
+	
+	
+		</div>
+	</div>
     <div id="twitch-embed"></div>
 
-    <!-- Load the Twitch embed script -->
+   
     <script src="https://embed.twitch.tv/embed/v1.js"></script>
-
+	<div id="chat">
+		<iframe frameborder="0"
+				scrolling="no"
+				id="chat_embed"
+				src="https://www.twitch.tv/embed/hebo/chat"
+				height="500"
+				width="350">
+		</iframe>
+	</div>
     <!--
       Create a Twitch.Embed object that will render
       within the "twitch-embed" root element.
@@ -23,7 +46,7 @@
       var embed = new Twitch.Embed("twitch-embed", {
         width: 854,
         height: 480,
-        channel: "monstercat",
+        channel: "owen_nowel",
         layout: "video",
         autoplay: false
       });
@@ -34,5 +57,7 @@
       });
     </script>
   </body>
+	
+	
 	
 </html>
